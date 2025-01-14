@@ -1,12 +1,12 @@
 #!/bin/bash
 
-KLIPPER_PATH="${HOME}/usr/data/klipper/"
+KLIPPER_PATH="/usr/data/klipper/"
 AUTOTUNETMC_PATH="${HOME}/klipper_tmc_autotune"
 
 if [[ -e ${KLIPPER_PATH}/klippy/plugins/ ]]; then
-    KLIPPER_PLUGINS_PATH="${KLIPPER_PATH}/klippy/plugins/"
+    KLIPPER_PLUGINS_PATH="/usr/data/klipper/klippy/plugins/"
 else
-    KLIPPER_PLUGINS_PATH="${KLIPPER_PATH}/klippy/extras/"
+    KLIPPER_PLUGINS_PATH="/usr/data/klipper/klippy/extras/"
 fi
 
 set -eu
