@@ -1,6 +1,6 @@
 #!/bin/bash
 
-KLIPPER_PATH="${HOME}/klipper"
+KLIPPER_PATH="${HOME}/usr/data/klipper/"
 AUTOTUNETMC_PATH="${HOME}/klipper_tmc_autotune"
 
 if [[ -e ${KLIPPER_PATH}/klippy/plugins/ ]]; then
@@ -34,7 +34,7 @@ function check_download {
 
     if [ ! -d "${AUTOTUNETMC_PATH}" ]; then
         echo "[DOWNLOAD] Downloading Autotune TMC repository..."
-        if git -C $autotunedirname clone https://github.com/andrewmcgr/klipper_tmc_autotune.git $autotunebasename; then
+        if git -C $autotunedirname clone https://github.com/Ice9922/klipper_tmc_autotune.git $autotunebasename; then
             chmod +x ${AUTOTUNETMC_PATH}/install.sh
             printf "[DOWNLOAD] Download complete!\n\n"
         else
